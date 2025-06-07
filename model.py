@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 token = os.getenv("HF_TOKEN")
-
+token="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"
 model_id = "model_id = "ibm-granite/granite-3.3-2b-instruct"
 model_id = "tiiuae/falcon-7b-instruct"  # or any public LLM
 
