@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sustainable Smart City Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5faff;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .response-box {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h2>🌆 Ask Your Smart City Assistant</h2>
+    <form method="post">
+        <input type="text" name="prompt" placeholder="e.g., How can we reduce traffic pollution?" required>
+        <button type="submit">Ask</button>
+    </form>
+    {% if response %}
+    <div class="response-box">
+        {{ response }}
+    </div>
+    {% endif %}
+</body>
+</html>
