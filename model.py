@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 token = os.getenv("HF_TOKEN")
 
-model_id = "ibm-granite/granite-3.3-2b-instruct"
+model_id = "model_id = "ibm-granite/granite-3.3-2b-instruct"
+model_id = "tiiuae/falcon-7b-instruct"  # or any public LLM
 
 tokenizer = AutoTokenizer.from_pretrained(model_id, token=token)
 model = AutoModelForCausalLM.from_pretrained(model_id, token=token)
