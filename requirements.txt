@@ -5,3 +5,4 @@ torch
 jinja2
 python-dotenv
 gradio
+streamlit
